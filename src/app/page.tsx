@@ -8,7 +8,8 @@ export default function Home() {
   const callApi = async () => {
     try {
       // const res = await fetch('http://localhost:8000/'); //  #replace localhost with your public ip of ec2
-      const res = await fetch('http://15.207.115.94:8000/');
+      // const res = await fetch('http://15.207.115.94:8000/');
+      const res = await fetch('https://cataas.com/cat');
       const data = await res.json();
       setResponse(JSON.stringify(data));
     } catch (err) {
