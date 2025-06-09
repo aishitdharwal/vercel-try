@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="p-10">
-      <h1 className="text-2xl mb-4">Call Local API</h1>
+      <h1 className="text-2xl mb-4">Call FastAPI</h1>
       <button
         onClick={callApi}
         className="bg-blue-500 text-white px-4 py-2 rounded"
