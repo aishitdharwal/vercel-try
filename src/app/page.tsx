@@ -8,7 +8,8 @@ export default function Home() {
   const callApi = async () => {
     try {
       // const res = await fetch('http://localhost:8000/'); //  #replace localhost with your public ip of ec2
-      const res = await fetch('http://3.109.213.148:8080/');
+      // const res = await fetch('http://3.109.213.148:8080/');
+      const res = await fetch('/api/');
       // const res = await fetch('https://openholidaysapi.org/PublicHolidays?countryIsoCode=CH&languageIsoCode=DE&validFrom=2022-01-01&validTo=2022-06-30');
       const data = await res.json();
       setResponse(JSON.stringify(data));
